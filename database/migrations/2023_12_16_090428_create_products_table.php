@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
+            $table->string('name');
             $table->integer('quantity',1)->notNull();
             $table->text('body');
             $table->timestamp('created at')->useCurrent();

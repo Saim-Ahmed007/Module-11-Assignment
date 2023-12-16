@@ -10,7 +10,7 @@ Route::get('/addproduct', function () {
 
 Route::post('/addproduct', function () {
     $product = new Product();
-    $product->title = request('title');
+    $product->name = request('name');
     $product->quantity = request('quantity');
     $product->body = request('body');
     $product->save();
